@@ -1,89 +1,112 @@
 {
-  "Apple Watch": {
-    "Apple Watch Series 7": {
-      "MKJP3CH/A": "(GPS + 蜂窝网络)；45 毫米午夜色铝金属表壳；午夜色运动型表带 - 标准号",
-      "MKJT3CH/A": "(GPS + 蜂窝网络)；45 毫米蓝色铝金属表壳；深邃蓝色运动型表带 - 标准号",
-      "MKJQ3CH/A": "(GPS + 蜂窝网络)；45 毫米星光色铝金属表壳；星光色运动型表带 - 标准号"
+  "regions": {
+    "cn": {
+      "Apple Watch": {
+        "Apple Watch Series 7": {
+          "MKJP3CH/A": "(GPS + 蜂窝网络)；45 毫米午夜色铝金属表壳；午夜色运动型表带 - 标准号",
+          "MKJT3CH/A": "(GPS + 蜂窝网络)；45 毫米蓝色铝金属表壳；深邃蓝色运动型表带 - 标准号",
+          "MKJQ3CH/A": "(GPS + 蜂窝网络)；45 毫米星光色铝金属表壳；星光色运动型表带 - 标准号"
+        },
+        "Apple Watch Nike Series 7": {
+          "MKL53CH/A": "(GPS + 蜂窝网络)；45 毫米午夜色铝金属表壳；煤黑配黑色 Nike 运动表带 - 标准号",
+          "MKL43CH/A": "(GPS + 蜂窝网络)；45 毫米星光色铝金属表壳；白金配黑色 Nike 运动表带 - 标准号"
+        }
+      },
+      "AirPods": {
+        "AirPods": {
+          "MV7N2CH/A": "AirPods (第二代)"
+        },
+        "AirPods Max": {
+          "MGYJ3CH/A": "AirPods Max - 银色"
+        }
+      },
+      "iPhone 15": {
+        "iPhone 15 Plus": {
+          "MTXD3CH/A": "128GB 蓝色",
+          "MTXA3CH/A": "128GB 粉色",
+          "MTXC3CH/A": "128GB 黄色",
+          "MTXE3CH/A": "128GB 绿色",
+          "MTX93CH/A": "128GB 黑色",
+          "MTXJ3CH/A": "256GB 蓝色",
+          "MTXG3CH/A": "256GB 粉色",
+          "MTXH3CH/A": "256GB 黄色",
+          "MTXK3CH/A": "256GB 绿色",
+          "MTXF3CH/A": "256GB 黑色",
+          "MTXP3CH/A": "512GB 蓝色",
+          "MTXM3CH/A": "512GB 粉色",
+          "MTXN3CH/A": "512GB 黄色",
+          "MTXQ3CH/A": "512GB 绿色",
+          "MTXL3CH/A": "512GB 黑色"
+        },
+        "iPhone 15": {
+          "MTLG3CH/A": "128GB 蓝色",
+          "MTLE3CH/A": "128GB 粉色",
+          "MTLF3CH/A": "128GB 黄色",
+          "MTLH3CH/A": "128GB 绿色",
+          "MTLD3CH/A": "128GB 黑色",
+          "MTLM3CH/A": "256GB 蓝色",
+          "MTLK3CH/A": "256GB 粉色",
+          "MTLL3CH/A": "256GB 黄色",
+          "MTLN3CH/A": "256GB 绿色",
+          "MTLJ3CH/A": "256GB 黑色",
+          "MTLT3CH/A": "512GB 蓝色",
+          "MTLQ3CH/A": "512GB 粉色",
+          "MTLR3CH/A": "512GB 黄色",
+          "MTLU3CH/A": "512GB 绿色",
+          "MTLP3CH/A": "512GB 黑色"
+        },
+        "iPhone 15 Pro": {
+          "MTQ63CH/A": "128GB 原色钛金属",
+          "MTQ73CH/A": "128GB 蓝色钛金属",
+          "MTQ53CH/A": "128GB 白色钛金属",
+          "MTQ43CH/A": "128GB 黑色钛金属",
+          "MTQA3CH/A": "256GB 原色钛金属",
+          "MTQC3CH/A": "256GB 蓝色钛金属",
+          "MTQ93CH/A": "256GB 白色钛金属",
+          "MTQ83CH/A": "256GB 黑色钛金属",
+          "MTQF3CH/A": "512GB 原色钛金属",
+          "MTQG3CH/A": "512GB 蓝色钛金属",
+          "MTQE3CH/A": "512GB 白色钛金属",
+          "MTQD3CH/A": "512GB 黑色钛金属",
+          "MTQK3CH/A": "1TB 原色钛金属",
+          "MTQL3CH/A": "1TB 蓝色钛金属",
+          "MTQJ3CH/A": "1TB 白色钛金属",
+          "MTQH3CH/A": "1TB 黑色钛金属"
+        },
+        "iPhone 15 Pro Max": {
+          "MU2Q3CH/A": "256GB 原色钛金属",
+          "MU2R3CH/A": "256GB 蓝色钛金属",
+          "MU2P3CH/A": "256GB 白色钛金属",
+          "MU2N3CH/A": "256GB 黑色钛金属",
+          "MU2V3CH/A": "512GB 原色钛金属",
+          "MU2W3CH/A": "512GB 蓝色钛金属",
+          "MU2U3CH/A": "512GB 白色钛金属",
+          "MU2T3CH/A": "512GB 黑色钛金属",
+          "MU603CH/A": "1TB 原色钛金属",
+          "MU613CH/A": "1TB 蓝色钛金属",
+          "MU2Y3CH/A": "1TB 白色钛金属",
+          "MU2X3CH/A": "1TB 黑色钛金属"
+        }
+      }
     },
-    "Apple Watch Nike Series 7": {
-      "MKL53CH/A": "(GPS + 蜂窝网络)；45 毫米午夜色铝金属表壳；煤黑配黑色 Nike 运动表带 - 标准号",
-      "MKL43CH/A": "(GPS + 蜂窝网络)；45 毫米星光色铝金属表壳；白金配黑色 Nike 运动表带 - 标准号"
-    }
-  },
-  "AirPods": {
-    "AirPods": {
-      "MV7N2CH/A": "AirPods (第二代)"
-    },
-    "AirPods Max": {
-      "MGYJ3CH/A": "AirPods Max - 银色"
-    }
-  },
-  "iPhone 15": {
-    "iPhone 15 Plus": {
-      "MTXD3CH/A": "128GB 蓝色",
-      "MTXA3CH/A": "128GB 粉色",
-      "MTXC3CH/A": "128GB 黄色",
-      "MTXE3CH/A": "128GB 绿色",
-      "MTX93CH/A": "128GB 黑色",
-      "MTXJ3CH/A": "256GB 蓝色",
-      "MTXG3CH/A": "256GB 粉色",
-      "MTXH3CH/A": "256GB 黄色",
-      "MTXK3CH/A": "256GB 绿色",
-      "MTXF3CH/A": "256GB 黑色",
-      "MTXP3CH/A": "512GB 蓝色",
-      "MTXM3CH/A": "512GB 粉色",
-      "MTXN3CH/A": "512GB 黄色",
-      "MTXQ3CH/A": "512GB 绿色",
-      "MTXL3CH/A": "512GB 黑色"
-    },
-    "iPhone 15": {
-      "MTLG3CH/A": "128GB 蓝色",
-      "MTLE3CH/A": "128GB 粉色",
-      "MTLF3CH/A": "128GB 黄色",
-      "MTLH3CH/A": "128GB 绿色",
-      "MTLD3CH/A": "128GB 黑色",
-      "MTLM3CH/A": "256GB 蓝色",
-      "MTLK3CH/A": "256GB 粉色",
-      "MTLL3CH/A": "256GB 黄色",
-      "MTLN3CH/A": "256GB 绿色",
-      "MTLJ3CH/A": "256GB 黑色",
-      "MTLT3CH/A": "512GB 蓝色",
-      "MTLQ3CH/A": "512GB 粉色",
-      "MTLR3CH/A": "512GB 黄色",
-      "MTLU3CH/A": "512GB 绿色",
-      "MTLP3CH/A": "512GB 黑色"
-    },
-    "iPhone 15 Pro": {
-      "MTQ63CH/A": "128GB 原色钛金属",
-      "MTQ73CH/A": "128GB 蓝色钛金属",
-      "MTQ53CH/A": "128GB 白色钛金属",
-      "MTQ43CH/A": "128GB 黑色钛金属",
-      "MTQA3CH/A": "256GB 原色钛金属",
-      "MTQC3CH/A": "256GB 蓝色钛金属",
-      "MTQ93CH/A": "256GB 白色钛金属",
-      "MTQ83CH/A": "256GB 黑色钛金属",
-      "MTQF3CH/A": "512GB 原色钛金属",
-      "MTQG3CH/A": "512GB 蓝色钛金属",
-      "MTQE3CH/A": "512GB 白色钛金属",
-      "MTQD3CH/A": "512GB 黑色钛金属",
-      "MTQK3CH/A": "1TB 原色钛金属",
-      "MTQL3CH/A": "1TB 蓝色钛金属",
-      "MTQJ3CH/A": "1TB 白色钛金属",
-      "MTQH3CH/A": "1TB 黑色钛金属"
-    },
-    "iPhone 15 Pro Max": {
-      "MU2Q3CH/A": "256GB 原色钛金属",
-      "MU2R3CH/A": "256GB 蓝色钛金属",
-      "MU2P3CH/A": "256GB 白色钛金属",
-      "MU2N3CH/A": "256GB 黑色钛金属",
-      "MU2V3CH/A": "512GB 原色钛金属",
-      "MU2W3CH/A": "512GB 蓝色钛金属",
-      "MU2U3CH/A": "512GB 白色钛金属",
-      "MU2T3CH/A": "512GB 黑色钛金属",
-      "MU603CH/A": "1TB 原色钛金属",
-      "MU613CH/A": "1TB 蓝色钛金属",
-      "MU2Y3CH/A": "1TB 白色钛金属",
-      "MU2X3CH/A": "1TB 黑色钛金属"
+    "hk": {
+        "iPhone 17 Pro": {
+          "MG8J4ZA/A": "256GB 蓝色"
+         },
+      "AirPods": {
+        "AirPods Pro 3": {
+          "MGYJ3ZP/A": "AirPods Pro 3 - White"
+        },
+        "AirPods Max": {
+          "MGYH3ZP/A": "AirPods Max - Silver"
+        }
+      },
+      "Apple Watch": {
+        "Apple Watch Series 11": {
+          "MKJP3ZP/A": "(GPS + Cellular); 45mm Midnight Aluminum Case; Midnight Sport Band - Regular",
+          "MKJT3ZP/A": "(GPS + Cellular); 45mm Blue Aluminum Case; Deep Navy Sport Band - Regular"
+        }
+      }
     }
   }
 }

@@ -1,34 +1,25 @@
 {
+  "region": "hk",
   "selected_products": {
-    "MGYJ3CH/A": [
-      "AirPods Max",
-      "AirPods Max - 银色"
-    ],
-    "MLHG3CH/A": [
-      "iPhone 13 Pro Max",
-      "512GB 远峰蓝色"
+    "MG8J4ZA/A": [
+      "iPhone 17 Pro",
+      "256GB \u84dd\u8272"
     ]
   },
-  "selected_area": "上海 上海 黄浦区",
-  "exclude_stores": [
-    "R688",
-    "R574",
-    "R531",
-    "R532",
-    "R471"
-  ],
+  "selected_area": "Hong Kong",
+  "exclude_stores": [],
   "notification_configs": {
     "dingtalk": {
       "access_token": "",
       "secret_key": ""
     },
     "telegram": {
-      "chat_id": "",
       "bot_token": "",
+      "chat_id": "",
       "http_proxy": ""
     },
     "bark": {
-      "url": "",
+      "url": "https://bark.shixin.org/eEDQSl32GNFZ4RPUd3P33r/Body",
       "query_parameters": {
         "url": null,
         "isArchive": null,
@@ -39,6 +30,7 @@
       }
     }
   },
-  "scan_interval": 30,
-  "alert_exception": false
+  "scan_interval": 10,
+  "alert_exception": true,
+  "alert_startup": false
 }

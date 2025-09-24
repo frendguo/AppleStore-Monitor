@@ -1,0 +1,29 @@
+{
+  "cn": {
+    "name": "中国大陆",
+    "base_url": "https://www.apple.com.cn",
+    "referer": "https://www.apple.com.cn/shop/buy-iphone/",
+    "fulfillment_endpoint": "/shop/fulfillment-messages",
+    "address_lookup_endpoint": "/shop/address-lookup",
+    "location_params": ["state", "city", "district"],
+    "location_key": "provinceCityDistrict",
+    "available_status": "今天可取货",
+    "currency": "RMB",
+    "language": "zh-CN"
+  },
+  "hk": {
+    "name": "香港",
+    "base_url": "https://www.apple.com/hk",
+    "referer": "https://www.apple.com/hk/shop/buy-iphone/",
+    "fulfillment_endpoint": "/shop/retail/pickup-message",
+    "address_lookup_endpoint": "/shop/address-lookup",
+    "location_params": [],
+    "location_key": "location",
+    "available_status": "Available today",
+    "available_status_alt": "今天可取货",
+    "default_location": "Hong Kong",
+    "currency": "HKD",
+    "language": "en-HK",
+    "note": "香港地区使用香港官网的API接口"
+  }
+}
