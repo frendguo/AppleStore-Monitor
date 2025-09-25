@@ -4,6 +4,10 @@
     "MG8J4ZA/A": [
       "iPhone 17 Pro",
       "256GB \u84dd\u8272"
+    ],
+    "MG8N4ZA/A": [
+      "iPhone 17 Pro",
+      "512GB \u84dd\u8272"
     ]
   },
   "selected_area": "Hong Kong",
@@ -30,7 +34,6 @@
       }
     }
   },
-  "scan_interval": 10,
-  "alert_exception": true,
-  "alert_startup": false
+  "scan_interval": 20,
+  "alert_exception": true
 }
