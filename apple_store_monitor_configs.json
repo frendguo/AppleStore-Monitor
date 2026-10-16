@@ -1,17 +1,49 @@
 {
-  "region": "hk",
+  "region": "cn",
   "selected_products": {
-    "MG8J4ZA/A": [
-      "iPhone 17 Pro",
-      "256GB \u84dd\u8272"
+    "MK2M4CH/A": [
+      "iPhone Duo",
+      "256GB 星光白色"
     ],
-    "MG8N4ZA/A": [
-      "iPhone 17 Pro",
-      "512GB \u84dd\u8272"
+    "MK2N4CH/A": [
+      "iPhone Duo",
+      "256GB 夜空色"
+    ],
+    "MK2P4CH/A": [
+      "iPhone Duo",
+      "512GB 星光白色"
+    ],
+    "MK2Q4CH/A": [
+      "iPhone Duo",
+      "512GB 夜空色"
+    ],
+    "MK2T4CH/A": [
+      "iPhone Duo",
+      "1TB 星光白色"
+    ],
+    "MK2U4CH/A": [
+      "iPhone Duo",
+      "1TB 夜空色"
+    ],
+    "MK2V4CH/A": [
+      "iPhone Duo",
+      "2TB 星光白色"
+    ],
+    "MK2W4CH/A": [
+      "iPhone Duo",
+      "2TB 夜空色"
     ]
   },
-  "selected_area": "Hong Kong",
-  "exclude_stores": [],
+  "selected_area": "广东 广州 天河区",
+  "exclude_stores": [
+    "R644",
+    "R571",
+    "R617",
+    "R646",
+    "R575",
+    "R766",
+    "R480"
+  ],
   "notification_configs": {
     "dingtalk": {
       "access_token": "",
@@ -23,11 +55,11 @@
       "http_proxy": ""
     },
     "bark": {
-      "url": "https://bark.shixin.org/eEDQSl32GNFZ4RPUd3P33r/Body",
+      "url": "https://bark.shixin.org/I47heFIpE6aEiHGr5tIhGU",
       "query_parameters": {
         "url": null,
         "isArchive": null,
-        "group": null,
+        "group": "AppleStore",
         "icon": null,
         "automaticallyCopy": null,
         "copy": null

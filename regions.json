@@ -3,7 +3,7 @@
     "name": "中国大陆",
     "base_url": "https://www.apple.com.cn",
     "referer": "https://www.apple.com.cn/shop/buy-iphone/",
-    "fulfillment_endpoint": "/shop/fulfillment-messages",
+    "fulfillment_endpoint": "/shop/retail/pickup-message",
     "address_lookup_endpoint": "/shop/address-lookup",
     "location_params": ["state", "city", "district"],
     "location_key": "provinceCityDistrict",

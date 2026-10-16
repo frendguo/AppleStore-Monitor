@@ -282,11 +282,9 @@ class AppleStoreMonitor:
             "parts.0": list(configs["selected_products"].keys())[0]
         }
         
-        # 为香港地区添加额外参数
-        if selected_region == 'hk':
-            store_params["mt"] = "regular"
-            import time
-            store_params["_"] = int(time.time() * 1000)
+        # retail/pickup-message 接口需要 mt 参数
+        store_params["mt"] = "regular"
+        store_params["_"] = int(time.time() * 1000)
         response = requests.get(region_info['base_url'] + region_info['fulfillment_endpoint'],
                                 headers=monitor.headers, params=store_params)
 
@@ -311,15 +309,11 @@ class AppleStoreMonitor:
                 print(f"完整响应：{response.text}")
                 return
             
-            # 香港地区使用不同的API结构
-            if selected_region == 'hk':
-                if 'stores' not in response_data['body']:
-                    print("API响应格式异常：缺少'stores'字段（香港API）")
-                    print(f"完整响应：{response.text}")
-                    return
+            # retail/pickup-message 接口（香港、中国大陆现行）直接返回 body.stores
+            if 'stores' in response_data['body']:
                 stores = response_data['body']['stores']
             else:
-                # 中国大陆等地区的API结构
+                # 旧版 fulfillment-messages 接口结构
                 if 'content' not in response_data['body']:
                     print("API响应格式异常：缺少'content'字段")
                     print(f"完整响应：{response.text}")
@@ -346,9 +340,9 @@ class AppleStoreMonitor:
             print(f"响应内容：{response.text}")
             return
         for index, store in enumerate(stores):
-            # 根据不同地区的API结构获取地址信息
-            if selected_region == 'hk':
-                # 香港API的地址结构
+            # 根据不同API结构获取地址信息
+            if isinstance(store.get("address"), dict):
+                # retail/pickup-message 接口的地址结构
                 address_parts = []
                 if "address" in store and "address2" in store["address"]:
                     address_parts.append(store["address"]["address2"])
@@ -356,7 +350,7 @@ class AppleStoreMonitor:
                     address_parts.append(store["address"]["address3"])
                 address = "，".join(filter(None, address_parts)) or "地址信息不可用"
             else:
-                # 中国大陆API的地址结构
+                # 旧版 fulfillment-messages 接口的地址结构
                 address = store["retailStore"]["address"]["street"]
             
             print("[{}] {}，地址：{}".format(index, store["storeName"], address))
@@ -465,12 +459,10 @@ class AppleStoreMonitor:
 
                 json_result = json.loads(response.text)
                 
-                # 根据不同地区的API结构获取stores数据
-                if self.region == 'hk':
-                    # 香港地区API结构
+                # retail/pickup-message 接口直接返回 body.stores，旧版接口在 content.pickupMessage 下
+                if 'stores' in json_result['body']:
                     stores = json_result['body']['stores']
                 else:
-                    # 中国大陆等地区API结构
                     stores = json_result['body']['content']['pickupMessage']['stores']
                 Utils.log(
                     '-------------------- 第{}次扫描 --------------------'.format(
@@ -491,8 +483,9 @@ class AppleStoreMonitor:
                         if 'available_status_alt' in self.region_info:
                             available_statuses.append(self.region_info['available_status_alt'])
                         
-                        is_available = (pickup_search_quote in available_statuses or 
-                                        pickup_display != 'unavailable')
+                        # 只认门店现货（店内取货）
+                        is_available = (pickup_search_quote in available_statuses or
+                                        pickup_display == 'available')
                         if is_available:
                             available_list.append((store_name, product_code, store_pickup_product_title))
 
